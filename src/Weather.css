@@ -52,7 +52,7 @@
   display: inline-block;
 }
 
-> weather.temperature {
+.Weather.temperature {
   font-weight: bold;
   font-weight: 400;
   font-size: 64px;
