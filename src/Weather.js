@@ -16,22 +16,24 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      icon: response.data.weather[0].icon,
+      iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
       wind: response.data.wind.speed,
-      city: response.data.name,
+      city: response.data.city,
     });
   }
+
+  function search() {
+    const apiKey = `7eo5ded69c3ffa8b7taebbf0b44b9fb2`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query={props.defaultCity}&key={apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
     search();
   }
   function handleCityChange(event) {
     setCity(event.target.value);
-  }
-  function search() {
-    const apiKey = `7eo5ded69c3ffa8b7taebbf0b44b9fb2`;
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query={props.defaultCity}&key={apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
