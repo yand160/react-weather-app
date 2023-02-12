@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM, { createRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 // Put any other imports below so that CSS from your
