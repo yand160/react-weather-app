@@ -17,7 +17,11 @@ export default function App() {
             open-sourced on Github
           </a>{" "}
           and{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://app.netlify.com/sites/teal-pixie-c3350e/overview"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             hosted on Netlify
           </a>
         </footer>
