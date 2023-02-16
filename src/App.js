@@ -8,22 +8,24 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="New York" />
         <footer>
-          This project was coded with ❤️ by Yandia Alexis and is
-          <a
-            href="https://github.com/yand160/react-weather-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            open-sourced on Github
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://app.netlify.com/sites/teal-pixie-c3350e/overview"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            hosted on Netlify
-          </a>
+          <strong>
+            This project was coded with ❤️ by Yandia Alexis and is
+            <a
+              href="https://github.com/yand160/react-weather-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              open-sourced on Github
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://app.netlify.com/sites/teal-pixie-c3350e/overview"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              hosted on Netlify
+            </a>
+          </strong>
         </footer>
       </div>
     </div>

@@ -2,6 +2,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/235/original/weatherclouds.jpg?1669308323);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
 }
 
 code {
